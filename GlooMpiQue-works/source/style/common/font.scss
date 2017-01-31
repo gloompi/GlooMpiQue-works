@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.ttf');
+    src: url('../fonts/FontAwesome.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sansus';
+	src: url('../fonts/Sansus-Webissimo-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url('../fonts/Roboto-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-bolditalic';
+	src: url('../fonts/Roboto-BoldItalic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-italic';
+	src: url('../fonts/Roboto-Italic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-light';
+	src: url('../fonts/Roboto-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin Roboto($style: regular) {
+	font-family: 'Roboto-regular';
+
+	@if $style == bold {
+		font-family: 'Roboto-bold';
+	}
+
+	@if $style == light {
+		font-family: 'Roboto-light';
+	}
+
+	@if $style == medium {
+		font-family: 'Roboto-medium';
+	}
+    
+    @if $style == italic {
+		font-family: 'Roboto-italic';
+	}
+}

@@ -1,0 +1,46 @@
+.fourth{
+    padding: 0 0 100px;
+}
+.fourth__head{
+    padding: 50px;
+    background-color: $sky-blue;
+}
+.fourth__heading{
+    @include Roboto(bold);
+    text-transform: uppercase;
+    color: $white;
+    font-size: 40px;
+}
+.fourth__descr{
+    @include Roboto(light);
+    font-size: 20px;
+    color: $white;
+    padding: 0 150px;
+}
+.fourth__main{
+    padding: 100px 0 0;
+}
+.fourth__list{
+    @include inlineblock(top);
+    width: 20%;
+    margin-left: 10%;
+    text-align: left;
+    &:first-child(){
+        margin-left: 0;
+    }
+}
+.fourth__item-pic{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 100px;
+    padding: 60px;
+    color: $sky-blue;
+    margin: 20px auto;
+    background-color: $bg;
+    border-radius: 50%;
+}
+.fourth__item-descr{
+    @include Roboto(light);
+    color: $black;
+}

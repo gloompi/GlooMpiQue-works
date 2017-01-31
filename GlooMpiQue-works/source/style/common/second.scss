@@ -1,0 +1,12 @@
+.section{
+    padding: 100px 0;
+    text-align: center;
+}
+.second__heading{
+    @include Roboto(bold);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.second__descr{
+    padding: 0 200px;
+}

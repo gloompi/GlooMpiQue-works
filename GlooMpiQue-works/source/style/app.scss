@@ -1,0 +1,27 @@
+// vars
+$blue: #4E00D6;
+$black: #3A3F43;
+$white: #FDFDFE;
+$grey: #9E9DA3;
+$sky-blue: #26A1D5;
+$bg: #EEEBDF;
+$yellow: #FFDB4D;
+
+
+// layout
+@import "common/jquery.bxslider.min.scss";
+@import "common/font";
+@import "common/font-awesome.min";
+@import "common/_sprite";
+@import "common/mixins";
+@import "common/greating";
+@import "common/media";
+// styles
+@import "common/first";
+@import "common/second";
+@import "common/third";
+@import "common/fourth";
+@import "common/reg";
+@import "common/promotion";
+@import "common/sixth";
+@import "common/footer";

@@ -1,0 +1,30 @@
+.third{
+    background-color: $grey;
+}
+.third__list{
+    @include inlineblock();
+    width: 30%;
+    margin-left: 2%;
+    padding: 20px;
+    text-align: left;
+    background-color: $white;
+    border-radius: 15px;
+}
+.fa{
+    font-size: 70px;
+    padding: 20px;
+    background-color: $sky-blue;
+    margin-top: -50px;
+    color: $white;
+}
+.fa-handshake-o{
+    padding: 20px 10px;
+}
+.third__item-heading{
+    @include Roboto(bold);
+    margin: 20px 0 5px;
+}
+.third__item-descr{
+    @include Roboto(light);
+    color: $black;
+}

@@ -1,0 +1,143 @@
+extends ../_template
+
+block variables
+  - var title = 'Home page'
+
+block content
+  .wrapper
+    .header
+        .container
+            .header__logo
+                a.logo__link(href="#")
+                    img.logo__img(src="assets/img/logo.jpg")
+            .header__mnu
+                ul.mnu__item
+                    li.mnu__list
+                        a.mnu__link(href="#school") О школе
+                    li.mnu__list
+                        a.mnu__link(href="#study") Обучение
+                    li.mnu__list
+                        a.mnu__link(href="#teacher") Преподователи
+                    li.mnu__list
+                        a.mnu__link(href="#contact") Контакты
+            .header__call
+                .call__descr Есть вопросы? 
+                    span.call__call Звоните!
+                .call__number 0709 56-66-66
+                a.call_back(href="#") Заказать обратный звонок
+                
+    .callback
+        a.exit__btn(href="")
+            i.fa.fa-arrows-alt(aria-hidden="true")
+        form.form__callback(method="GET" action="mailto:gloompi@gmail.com")
+            h2.form__heading Отправить данные
+            input.input(type="name" name="name" placeholder="Имя")
+            input.input(type="phone" name="number" placeholder="Телефон")
+            button.callback__btn(type="submit") Отправить
+        
+    section.first
+        ul.slider
+            li.slider__list.slider__item-1(style="background-image: url('assets/img/1.JPG');")
+               .container
+                    h1.item__heading Lorem ipsum dolor sit amet.
+                    .item__descr
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam velit accusantium praesentium, delectus suscipit aliquid dolore voluptates optio asperiores beatae vel aspernatur explicabo mollitia, voluptatum sunt recusandae fuga et officiis doloribus voluptatibus hic eveniet, quia exercitationem debitis! Incidunt sapiente, esse voluptas, illum vero rerum, quibusdam adipisci voluptatibus ex fuga quaerat!
+            li.slider__list.slider__item-2(style="background-image: url('assets/img/2.JPG');")
+                .container
+                    h1.item__heading Lorem ipsum dolor sit amet.
+                    .item__descr
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod debitis, velit hic ullam facere omnis alias nostrum cum. Laboriosam suscipit placeat cupiditate, fugiat quisquam. Fuga eligendi veritatis dolorem ducimus, consequatur ipsum eum libero minima deleniti.
+                
+    section.section.second#school 
+        .container
+            h1.second__heading О школе
+            .second__descr
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt mollitia, doloribus modi ut voluptatum excepturi, cumque velit amet ullam libero a enim perferendis sequi qui, obcaecati animi saepe corporis. Est harum enim mollitia, voluptatibus quibusdam unde eveniet dolorem, optio autem dicta facilis molestias, accusamus nemo laudantium velit itaque! Ab, quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae illum autem, sequi eius velit non nisi asperiores porro atque, modi ducimus at consequatur veniam odit voluptatem aliquid minima illo id!
+                
+    section.section.third
+        .container
+            ul.third__items
+                li.third__list
+                    i.fa.fa-handshake-o(aria-hidden="true")
+                    h2.third__item-heading Методика
+                    .third__item-descr
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus velit beatae, commodi ab, obcaecati fugiat vero laudantium eaque fuga ullam mollitia numquam doloribus accusamus non, nam reiciendis, modi consequuntur. Sunt?
+                li.third__list
+                    i.fa.fa-user-circle-o(aria-hidden="true")
+                    h2.third__item-heading Преподователи
+                    .third__item-descr
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae recusandae perspiciatis culpa amet fugit sapiente, cum cupiditate unde molestias suscipit asperiores cumque! Impedit enim sapiente error, odio neque, nihil ipsam.
+                li.third__list
+                    i.fa.fa-list-ul(aria-hidden="true")
+                    h2.third__item-heading Программы
+                    .third__item-descr
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error cupiditate praesentium fugit sequi vero tenetur dolorum cumque magnam, consequatur velit magni officia voluptas sed porro harum, amet ducimus odio.
+                        
+    section.section.fourth#study
+        .fourth__head
+           .container
+               h1.fourth__heading Выучить Китайский - просто!
+               .fourth__descr
+                   p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis natus quo labore accusantium nesciunt, hic sunt, nisi vero ratione facere modi molestiae voluptas similique minus at, quam maxime eaque illum.
+        .fourth__main
+            .container
+                ul.fourth__items
+                    li.fourth__list
+                        h2.fourth__item-heading Чтение
+                        i.fa.fa-book.fourth__item-pic(aria-hidden="true")
+                        .fourth__item-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et quisquam iusto laborum ex facilis adipisci alias commodi animi quae cum culpa quod, voluptate, ipsa nisi at molestiae itaque deleniti.
+                    li.fourth__list
+                        h2.fourth__item-heading Разговорный
+                        i.fa.fa-street-view.fourth__item-pic(aria-hidden="true")
+                        .fourth__item-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et quisquam iusto laborum ex facilis adipisci alias commodi animi quae cum culpa quod, voluptate, ipsa nisi at molestiae itaque deleniti.
+                    li.fourth__list
+                        h2.fourth__item-heading Письменный
+                        i.fa.fa-sticky-note-o.fourth__item-pic(aria-hidden="true")
+                        .fourth__item-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et quisquam iusto laborum ex facilis adipisci alias commodi animi quae cum culpa quod, voluptate, ipsa nisi at molestiae itaque deleniti.
+                        
+    article.reg
+        .container
+            h1.reg__heading Почему Китайский нужно учить у нас?
+            ul.reg__items
+                li.reg__list
+                    .reg__icon
+                    .reg__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis aspernatur, dicta ratione modi, repellendus necessitatibus, est laboriosam doloremque cupiditate sequi odio, iure quidem obcaecati illum natus deleniti beatae ab.
+                li.reg__list
+                    .reg__icon
+                    .reg__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis aspernatur, dicta ratione modi, repellendus necessitatibus, est laboriosam doloremque cupiditate sequi odio, iure quidem obcaecati illum natus deleniti beatae ab.
+                li.reg__list
+                    .reg__icon
+                    .reg__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis aspernatur, dicta ratione modi, repellendus necessitatibus, est laboriosam doloremque cupiditate sequi odio, iure quidem obcaecati illum natus deleniti beatae ab.
+                li.reg__list
+                    .reg__icon
+                    .reg__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis aspernatur, dicta ratione modi, repellendus necessitatibus, est laboriosam doloremque cupiditate sequi odio, iure quidem obcaecati illum natus deleniti beatae ab.
+                li.reg__list
+                    .reg__icon
+                    .reg__descr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nobis aspernatur, dicta ratione modi, repellendus necessitatibus, est laboriosam doloremque cupiditate sequi odio, iure quidem obcaecati illum natus deleniti beatae ab.
+                    
+    article.promotion
+        img.asol(src="assets/img/dv.jpg")
+    section.section.sixth#teacher
+        .container
+            h1.sixth__heading Наши Преподователи
+            .sixth__descr
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vel libero, odio quae sint eaque suscipit dolorum impedit eveniet ipsa porro a deleniti ex sed iusto, blanditiis cupiditate accusantium asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum magni pariatur modi facilis odio. Libero laboriosam sed amet doloremque dignissimos, ex recusandae rem autem tempora, natus, deleniti dolorum debitis quidem.
+            ul.teachers
+                li.teachers__list
+                    img.teacher__img
+                li.teachers__list
+                    img.teacher__img
+                li.teachers__list
+                    img.teacher__img
+                li.teachers__list
+                    img.teacher__img
+                li.teachers__list
+                    img.teacher__img
+                    
+    section.map
+        #map(style="width: 100%; height: 600px")
+        
+  footer.footer#contact
+    .copy
+        span &copy; Билим Экспорт 2017 
+    span 0709 56-66-66
